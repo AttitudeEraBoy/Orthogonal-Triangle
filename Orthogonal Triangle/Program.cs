@@ -55,7 +55,7 @@ namespace Orthogonal_Triangle
             {
                 for (int j = 0; j < columns; j++)
                 {
-                    if (IsPrime(array[i, j]))
+                    if (!IsPrime(array[i, j]))
                     {
                         toplam.Add(array[i, j]);
                         break;
@@ -65,7 +65,6 @@ namespace Orthogonal_Triangle
             }
             sum = toplam.Sum();
             Console.WriteLine(sum);
-
             Console.ReadLine();
         }
     }
